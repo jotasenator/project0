@@ -1,10 +1,43 @@
 body {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 0;
   height: 100vh;
 }
 .search-links {
-  margin-top: 20px;
+  margin: 20px;
+  text-align: right;
+}
+.search-inputs {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.search-inputs div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-inputs input {
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 5px;
+}
+.column {
+  flex-direction: column;
+}
+.search-button,
+.advanced-search-button,
+.image-search-button {
+  float: right;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.advanced-search-button,
+.image-search-button {
+  background: blue;
+  color: white;
 }
