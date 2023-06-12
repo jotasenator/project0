@@ -3,16 +3,26 @@
   <head>
     <title>Image Search</title>
     <link rel="stylesheet" href="../styles.css" />
+    <link
+      rel="shortcut icon"
+      href="../static/favicon.ico"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <div class="search-links">
       <a href="../index.html">Google Search</a>
     </div>
-    s
     <div class="search-inputs">
       <img src="../static/google.png" alt="google-logo" />
-      <form action="https://www.google.com/images">
-        <input type="text" name="q" />
+      <form class="image-form" action="https://www.google.com/images">
+        <input
+          class="main-search"
+          type="text"
+          name="q"
+          autofocus
+          placeholder="...looking for a picture?"
+        />
         <input class="image-search-button" type="submit" value="Image Search" />
       </form>
     </div>

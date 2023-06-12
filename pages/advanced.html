@@ -3,6 +3,11 @@
   <head>
     <title>Advanced Search</title>
     <link rel="stylesheet" href="../styles.css" />
+    <link
+      rel="shortcut icon"
+      href="../static/favicon.ico"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <div class="search-links">
@@ -11,10 +16,13 @@
     <br />
     <div class="search-inputs">
       <img src="../static/google.png" alt="google-logo" />
-      <form action="https://google.com/search">
+      <form
+        class="search-advanced-questions"
+        action="https://google.com/search"
+      >
         <div>
           <label for="as_q">Find pages with… “all these words:”</label>
-          <input type="text" name="as_q" id="as_q" placeholder="" />
+          <input type="text" name="as_q" id="as_q" autofocus />
         </div>
         <div>
           <label for="as_epq"
@@ -31,7 +39,7 @@
           <input type="text" name="as_eq" id="as_eq" />
         </div>
         <input
-          class="advanced-search-button"
+          id="advanced-search-button"
           type="submit"
           value="Advanced Search"
         />
