@@ -1,0 +1,10 @@
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.search-links {
+  margin-top: 20px;
+}
